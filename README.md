@@ -1,5 +1,5 @@
 ### MCSchematic
-This README is outdated from version 7 - Beta, we are now in version 11 - Release (which is the first release of MCSchematic)!
+This README is outdated from version 7 - Beta, we are now in version 11 - Release (which is the first release of MCSchematic!)
 
 
 #### What is it?
