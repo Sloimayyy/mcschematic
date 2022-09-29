@@ -69,7 +69,7 @@ schem = mcschematic.MCSchematic()
 
 schem.setBlock(  (0, -1, 0), "minecraft:stone"  )
 
-schem.save(  "myschems", "my_cool_schematic", Version.JE_1_18_2)
+schem.save(  "myschems", "my_cool_schematic", mcschematic.Version.JE_1_18_2)
 ```
 Some information on the method parameters:
 **outputFolderPath**: The path to the folder on your computer where the schematic will be saved. It's using python's URI handler, so for example if the path doesn't start with a hard drive, the root folder by which the path anchors to is your project. So just inputting `"myschems"` will create a folder inside your project named "*myschems*".
