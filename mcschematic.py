@@ -285,10 +285,14 @@ Versions (last is current):
       playing it safe and make sure they stay 32 bit numbers so that bounds computation can be as
       fast as possible!
     - Added docstrings for all "publicly" available methods! (this took 3 hours it was so boring help me)
+    - 11.2 : Fixed a bug that made schematics be billions of blocks long or have negative volume
+             if it is small enough and the right conditions are met bruh moment
+    - 11.4 : Added "MCStructure#blockStateIterator()", which is a generator made to iterate over every non-air
+             block of the structure.
 '''
 
 from enum import Enum
-from typing import Union
+from typing import Union, Generator
 import os
 import math
 import io
@@ -1379,10 +1383,16 @@ class MCStructure:
         :return: The -XYZ and +XYZ corners of this structure.
         """
 
-        # Setting all those min and maxes to 1B and -1B assuming no one
-        # is gonna go over those.
-        xMin, yMin, zMin = 0x3FFFFFFF, 0x3FFFFFFF, 0x3FFFFFFF
-        xMax, yMax, zMax = -0x3FFFFFFF, -0x3FFFFFFF, -0x3FFFFFFF
+        ## Init the mins and maxes with a random block in the hashmap, as any
+        ## block in the hashmap is susceptible of being a max and min.
+        ## Also solves a bug I had when I was setting those values to -1B and +1B,
+        ## if there weren't enough blocks, a max could have not been set altogether
+
+        ## Get the first key in the dict, by creating a generator instead of using
+        ## random.choice which needs a list which can be really costly
+        randomBlockPos = (0, 0, 0) if len(self._blockStates) == 0 else next((k for k in self._blockStates.keys()))
+        xMin, yMin, zMin = randomBlockPos
+        xMax, yMax, zMax = randomBlockPos
 
         keys = self._blockStates.keys()
 
@@ -1522,6 +1532,16 @@ class MCStructure:
 
         # Retrun
         return subStructure
+
+    def blockStateIterator(self) -> Generator[tuple[tuple[int, int, int], str], None, None]:
+        """
+        :return: A generator that will output the coords as a tuple[int, int, int] and the blockId of the
+                 blockState at those coordinates. The coordinates are *about random*, as they're not sorted
+                 and comes straight from a dictionary (so in order of adding).
+                 This generated also only iterates over non-air blocks, as it iterates over every blockState
+                 contained inside this structure.
+        """
+        return ((coords, self._blockPalette[paletteBlockId]) for coords, paletteBlockId in self._blockStates.items())
 
 
 
