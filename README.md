@@ -3,7 +3,7 @@ This README is outdated from version 7 - Beta, we are now in version 11 - Releas
 
 
 #### What is it?
-MCSchematic (short for Minecraft Schematic) is a python package aiming to make creating [Minecraft Schematics](https://www.minecraft-schematics.com/worldedit/tutorial/ "Minecraft Schematics") through code easy. 
+MCSchematic (short for Minecraft Schematic) is a package for Python 3.9+ aiming to make creating [Minecraft Schematics](https://www.minecraft-schematics.com/worldedit/tutorial/ "Minecraft Schematics") through code easy.
 #### What is a Minecraft Schematic?
 In Minecraft, multiple mods such as [WorldEdit](https://worldedit.enginehub.org/en/latest/ "WorldEdit") use schematic files to save an area of the world on your computer, making you able to share and reuse it in other worlds or places of worlds. In summary, it's a big list of blocks and entities saved on our hard drives.
 Note that Minecraft Schematics are **Minecraft Java Edition only**.
