@@ -3577,6 +3577,20 @@ class Version(Enum):
     The Enum used to specify which Minecraft version we want to save a schematic
     for in MCSchematic#save().
     """
+    JE_1_20_5 = 3837
+    JE_1_20_4 = 3700
+    JE_1_20_3 = 3698
+    JE_1_20_2 = 3578
+    JE_1_20_2_RELEASE_CANDIDATE_2 = 3577
+    JE_1_20_2_RELEASE_CANDIDATE_1 = 3576
+    JE_1_20_2_PRE_RELEASE_4 = 3575
+    JE_1_20_2_PRE_RELEASE_3 = 3574
+    JE_1_20_2_PRE_RELEASE_2 = 3573
+    JE_1_20_2_PRE_RELEASE_1 = 3572
+    JE_23W35A = 3571
+    JE_23W33A = 3570
+    JE_23W32A = 3569
+    JE_23W31A = 3567
     JE_1_20_1 = 3465
     JE_1_20_1_RELEASE_CANDIDATE_1 = 3464
     JE_1_20 = 3463
