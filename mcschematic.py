@@ -3160,7 +3160,7 @@ class BlockDataDB:
 
     class BARREL:
         _barrelSS = [
-            """minecraft:barrel[open=false,facing=up]{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:barrel[open=false,facing=up]{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:barrel[open=false,facing=up]{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:barrel[open=false,facing=up]{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:60b,Slot:1b,id:"minecraft:redstone"}]}""",
             """minecraft:barrel[open=false,facing=up]{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:64b,Slot:1b,id:"minecraft:redstone"},{Count:64b,Slot:2b,id:"minecraft:redstone"},{Count:55b,Slot:3b,id:"minecraft:redstone"}]}""",
@@ -3201,7 +3201,7 @@ class BlockDataDB:
 
     class HOPPER:
         _hopperSS = [
-            """minecraft:hopper{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:hopper{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:hopper{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:hopper{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:23b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:hopper{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:46b,Slot:0b,id:"minecraft:redstone"}]}""",
@@ -3242,7 +3242,7 @@ class BlockDataDB:
 
     class FURNACE:
         _furnaceSS = [
-            """minecraft:furnace{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:furnace{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:furnace{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:furnace{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:14b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:furnace{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:28b,Slot:0b,id:"minecraft:redstone"}]}""",
@@ -3283,7 +3283,7 @@ class BlockDataDB:
 
     class DISPENSER:
         _dispenserSS = [
-            """minecraft:dispenser{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:dispenser{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:dispenser{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:dispenser{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:42b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:dispenser{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:19b,Slot:1b,id:"minecraft:redstone"}]}""",
@@ -3324,7 +3324,7 @@ class BlockDataDB:
 
     class DROPPER:
         _dropperSS = [
-            """minecraft:dropper{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:dropper{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:dropper{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:dropper{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:42b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:dropper{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:19b,Slot:1b,id:"minecraft:redstone"}]}""",
@@ -3365,7 +3365,7 @@ class BlockDataDB:
 
     class TRAPPED_CHEST:
         _trapped_chestSS = [
-            """minecraft:trapped_chest{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:trapped_chest{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:trapped_chest{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:trapped_chest{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:60b,Slot:1b,id:"minecraft:redstone"}]}""",
             """minecraft:trapped_chest{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:64b,Slot:1b,id:"minecraft:redstone"},{Count:64b,Slot:2b,id:"minecraft:redstone"},{Count:55b,Slot:3b,id:"minecraft:redstone"}]}""",
@@ -3406,7 +3406,7 @@ class BlockDataDB:
 
     class CHEST:
         _chestSS = [
-            """minecraft:chest{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:chest{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:chest{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:chest{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:60b,Slot:1b,id:"minecraft:redstone"}]}""",
             """minecraft:chest{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:64b,Slot:1b,id:"minecraft:redstone"},{Count:64b,Slot:2b,id:"minecraft:redstone"},{Count:55b,Slot:3b,id:"minecraft:redstone"}]}""",
@@ -3447,7 +3447,7 @@ class BlockDataDB:
 
     class SHULKER_BOX:
         _shulker_boxSS = [
-            """minecraft:shulker_box{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:shulker_box{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:shulker_box{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:shulker_box{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:60b,Slot:1b,id:"minecraft:redstone"}]}""",
             """minecraft:shulker_box{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:64b,Slot:0b,id:"minecraft:redstone"},{Count:64b,Slot:1b,id:"minecraft:redstone"},{Count:64b,Slot:2b,id:"minecraft:redstone"},{Count:55b,Slot:3b,id:"minecraft:redstone"}]}""",
@@ -3488,7 +3488,7 @@ class BlockDataDB:
 
     class SMOKER:
         _smokerSS = [
-            """minecraft:smoker{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:smoker{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:smoker{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:smoker{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:14b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:smoker{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:28b,Slot:0b,id:"minecraft:redstone"}]}""",
@@ -3529,7 +3529,7 @@ class BlockDataDB:
 
     class BLAST_FURNACE:
         _blast_furnaceSS = [
-            """minecraft:blast_furnace{CustomName:'{"italic":false,"text":"0"}',Items:[{Count:0b,Slot:0b,id:"minecraft:redstone"}]}""",
+            """minecraft:blast_furnace{CustomName:'{"italic":false,"text":"0"}'}""",
             """minecraft:blast_furnace{CustomName:'{"italic":false,"text":"1"}',Items:[{Count:1b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:blast_furnace{CustomName:'{"italic":false,"text":"2"}',Items:[{Count:14b,Slot:0b,id:"minecraft:redstone"}]}""",
             """minecraft:blast_furnace{CustomName:'{"italic":false,"text":"3"}',Items:[{Count:28b,Slot:0b,id:"minecraft:redstone"}]}""",
