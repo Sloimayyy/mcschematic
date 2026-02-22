@@ -1259,7 +1259,15 @@ class MCStructure:
 
         :param position: The position to place the blockData at
         :param blockData: The blockData to place
+        :raises TypeError: if blockData is not a native Python string.
         """
+
+        # validate blockData type
+        if not isinstance(blockData, str) or type(blockData) != str:
+            raise TypeError(
+                f"blockData must be a native Python string (str), but got type {type(blockData)}. "
+                f"Value: '{str(blockData)[:100]}{'...' if len(str(blockData)) > 100 else ''}'"
+            )
 
         # We have a different treatment between block entities
         # and normal blocks.
